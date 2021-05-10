@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="survey-form.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">
+          We personally want to thank YOU for every second invested in our
+          research. You rock!
+        </p>
+      </header>
+      <div class="div-form">
+        <form method="POST" action="#" id="survey-form">
+          <section id="name-field">
+            <label id="name-label" for="name">Name</label>
+            <input id="name" type="text" placeholder="Enter your name" />
+          </section>
+          <section id="email-field">
+            <label id="email-label" for="email">Email</label>
+            <input id="email" type="email" placeholder="Enter your email" />
+          </section>
+          <section id="age-field">
+            <label id="number-label" for="number">Number</label>
+            <input
+              id="number"
+              type="number"
+              min="8"
+              max="12"
+              placeholder="Enter age"
+            />
+          </section>
+          <section id="role-field">
+            <label for="dropdown">Which describes you the best?</label>
+            <select id="dropdown">
+              <option value="Student" id="student">Student</option>
+              <option value="Employee" id="employee">Employee</option>
+              <option value="Business" id="business">Business</option>
+            </select>
+          </section>
+          <section id="gender">
+            <fieldset>
+              <legend>Gender</legend>
+              <div id="div-male">
+                <input type="radio" name="gender" value="Male" id="male" />
+                <label for="male">Male</label>
+              </div>
+              <div id="div-female">
+                <input type="radio" name="gender" value="Female" id="female" />
+                <label for="female">Female</label>
+              </div>
+              <div id="div-other">
+                <input type="radio" name="gender" value="Other" id="other" />
+                <label for="other">Other</label>
+              </div>
+            </fieldset>
+          </section>
+          <section id="interests">
+            <p id="interest">What are your interests?</p>
+            <div id="div-it">
+              <input type="checkbox" value="IT" id="it" name="interests" />
+              <label for="it">IT</label>
+            </div>
+            <div id="div-sports">
+              <input
+                type="checkbox"
+                value="Sports"
+                id="sports"
+                name="interests"
+              />
+              <label for="sports">Sports</label>
+            </div>
+            <div id="div-real-estate">
+              <input
+                type="checkbox"
+                value="Real Estate"
+                id="real-estate"
+                name="interests"
+              />
+              <label for="real-estate">Real Estate</label>
+            </div>
+          </section>
+          <section id="sect-feedback">
+            <label for="feedback">Feedback</label>
+            <textarea id="feedback" value="feedback"></textarea>
+            <input type="submit" value="Submit" id="submit" />
+          </section>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

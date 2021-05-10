@@ -1,0 +1,106 @@
+fieldset {
+    border: none;
+}
+
+body {
+    background-color: #05263B;
+    color:#ced6e0;
+    box-sizing: border-box;
+}
+#survey-form {
+    background-color: #9CA6B8;
+    color: #05263B;
+    width: 900px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: groove 2px black;
+    border-radius: 10px;
+}
+section {
+    margin: 5px;
+    padding: 10px;
+    width: 600px;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: solid 1px black;
+    border-radius: 5px;
+    /* border-top: none; */
+    border-bottom: none;
+}
+.div-form {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2em;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    text-align: center;
+    font-size: 1.5em;
+}
+#sect-feedback, #interests {
+    height: 20vh;
+}
+#gender {
+    height: 15vh;
+}
+textarea {
+    height: 100%;
+    margin: 10px;
+}
+[type="submit"] {
+    width: 20%;
+    align-self: center;
+}
+@media (max-width: 1000px) {
+    #survey-form {
+        width: 450px;
+    }
+    header {
+        width: 100%;
+        font-size: 1.2em;
+    }
+    .div-form {
+        font-size:1em;
+    }
+    section {
+        width: 400px;
+    }
+}
+@media (max-width: 600px) {
+    #survey-form {
+        width: 300px;
+    }
+    header {
+        width: 100%;
+        font-size: 1.2em;
+    }
+    .div-form {
+        font-size:1em;
+    }
+    section {
+        width: 350px;
+    }
+}
+@media (max-width: 425px) {
+    #survey-form {
+        width: 250px;
+    }
+    header {
+        width: 100%;
+        font-size: 1.2em;
+    }
+    .div-form {
+        font-size:1em;
+    }
+    section {
+        width: 300px;
+    }
+}
